@@ -1,0 +1,2 @@
+deviceName,udid,platformName,platformVersion,automationName,appPackage,appActivity
+sdk_gphone64_x86_64,emulator-5554,Android,14,uiAutomator2,com.swaglabsmobileapp,com.swaglabsmobileapp.MainActivity

@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation group: 'io.appium', name: 'java-client', version: '9.3.0'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.19.0'
+    implementation group: 'io.cucumber', name: 'cucumber-testng', version: '7.20.1'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.20.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.15.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.1' // Log4J
+    implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
+    implementation 'com.opencsv:opencsv:5.5.2'        // CSV Parsing
+    implementation 'com.aventstack:extentreports:5.0.9' // Extent Reports
+}
+
+test {
+    useTestNG()
+}
